@@ -1,0 +1,7 @@
+dataset/
+*.h5
+*.keras
+sign_model_tf/
+.venv/
+venv/
+__pycache__/
