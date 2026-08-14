@@ -54,9 +54,7 @@ Dropout (0.2)
 Dense (26, Softmax)
      ↓
 ASL Letter Prediction
-
-
-##🔤 Supported Signs
+🔤 Supported Signs
 
 The model recognizes the 26 English alphabet signs:
 
@@ -71,7 +69,7 @@ space
 
 These additional labels are used for sentence construction and interaction.
 
-##🛠️ Technologies Used
+🛠️ Technologies Used
 Python
 TensorFlow
 Keras
@@ -82,9 +80,7 @@ NumPy
 Matplotlib
 Scikit-learn
 pyttsx3
-
-
-##📂 Project Structure
+📂 Project Structure
 Sign-Language-Recognition/
 │
 ├── .gitignore
@@ -100,9 +96,7 @@ Sign-Language-Recognition/
 ├── sign_lang_demo.py
 │
 └── training_curves.png
-
-
-##📊 Training Process
+📊 Training Process
 
 The model is trained in two phases.
 
@@ -131,9 +125,7 @@ Early stopping
 Learning-rate reduction
 Model checkpointing
 Validation accuracy monitoring
-
-
-##📈 Training Results
+📈 Training Results
 
 Training and validation accuracy and loss are plotted and saved as:
 
@@ -141,7 +133,7 @@ training_curves.png
 
 Training Curves
 
-##🎥 Real-Time Recognition
+🎥 Real-Time Recognition
 
 The realtime_sign.py script uses MediaPipe Hands to detect a hand from the webcam and passes the detected hand region to the trained deep learning model.
 
@@ -153,9 +145,7 @@ Resized and normalized
 Passed to the trained model
 Classified into an ASL sign
 Smoothed across multiple predictions
-
-
-##🔄 Prediction Stabilization
+🔄 Prediction Stabilization
 
 To reduce unstable frame-by-frame predictions, the system uses temporal smoothing.
 
@@ -163,7 +153,7 @@ Predictions are stored in a 15-frame window, and predictions below the confidenc
 
 The system also uses a sign-locking state machine so that holding the same sign does not repeatedly add the same letter to the sentence.
 
-##🔊 Text-to-Speech
+🔊 Text-to-Speech
 
 The application uses pyttsx3 to convert the generated sentence into speech.
 
@@ -173,16 +163,14 @@ S
 
 to speak the current sentence.
 
-##⌨️ Controls
+⌨️ Controls
 Key	Function
 Q	Quit application
 C	Delete last character
 X	Clear entire sentence
 S	Speak sentence
 SPACE	Add a space
-
-
-##🚀 How to Run
+🚀 How to Run
 1. Install Dependencies
 pip install tensorflow opencv-python mediapipe numpy matplotlib scikit-learn pyttsx3
 2. Train the Model
@@ -205,7 +193,7 @@ python realtime_sign.py
 
 Make sure your webcam is connected and accessible.
 
-###🔍 System Workflow
+🔍 System Workflow
               Webcam
                  ↓
        MediaPipe Hand Detection
@@ -225,24 +213,21 @@ Make sure your webcam is connected and accessible.
         Sentence Formation
                  ↓
           Text-to-Speech
-##💡 Applications
+💡 Applications
 Sign language learning
 Accessibility technology
 Communication assistance
 Educational tools
 Human-computer interaction
 Gesture-based interfaces
-
-
-##🔮 Future Improvements
+🔮 Future Improvements
 Support for dynamic ASL signs
 Recognition of complete words and phrases
 Multi-hand gesture recognition
 Improved sentence prediction
 Web or mobile deployment
 Integration with a language model for sentence correction
-
-##👩‍💻 Author
+👩‍💻 Author
 
 Nyasa Desai
 
